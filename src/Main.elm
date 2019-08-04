@@ -1,6 +1,6 @@
 module Main exposing (main)
 
-import Browser exposing (Document, UrlRequest, application)
+import Browser exposing (Document, UrlRequest, document)
 import Browser.Navigation exposing (Key)
 import Colors
 import Element exposing (alignBottom, alignRight, centerX, centerY, column, fill, height, layout, link, padding, row, spacing, text, width)
@@ -12,13 +12,11 @@ import Url exposing (Url)
 
 
 main =
-    application
+    document
         { init = init
         , view = view
         , update = update
         , subscriptions = subscriptions
-        , onUrlRequest = onUrlRequest
-        , onUrlChange = onUrlChange
         }
 
 
@@ -36,8 +34,8 @@ type Msg
     | UrlChange
 
 
-init : Flags -> Url -> Key -> ( Model, Cmd Msg )
-init flags url key =
+init : Flags -> ( Model, Cmd Msg )
+init flags =
     ( {}, Cmd.none )
 
 
@@ -93,6 +91,6 @@ title =
 footer =
     row
         ([ width fill, alignBottom, centerX, spacing 12 ] ++ Typography.primary)
-        [ link [ alignRight ] { url = "mailto: info@flip-il.org", label = text "Email us" }
-        , link [ alignRight ] { url = "https://2018.flip-il.org", label = text "FLIP 2018" }
+        [ link [ alignRight ] { url = "mailto:info@flip-il.org", label = text "Email us" }
+        , link [ alignRight ] { url = "https://2018.flip-il.org/", label = text "FLIP 2018" }
         ]

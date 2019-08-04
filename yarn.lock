@@ -1975,6 +1975,11 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+elm-hot@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/elm-hot/-/elm-hot-1.1.1.tgz#5284dcb475b329b1a41f1b41d201041cd05a3b96"
+  integrity sha512-ZHjoHd2Ev6riNXNQirj3J+GKKXXwedAUikfFBYzlVL/+3CdGs96cpZ7nhAk4c5l//Qa9ymltrqX36mOlr0pPFA==
+
 elm@^0.19.0-no-deps:
   version "0.19.0-no-deps"
   resolved "https://registry.yarnpkg.com/elm/-/elm-0.19.0-no-deps.tgz#4754b658c424771823ee91bd5bf6387647954add"

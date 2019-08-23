@@ -97,7 +97,7 @@ topBar =
     row [ width fill, Element.spaceEvenly, spacing 24, paddingEach { top = 24, left = 24, right = 24, bottom = 36 } ]
         [ imageFromClass "logo" [ width <| px 127 ]
         , link (callForActionAnd [ alignRight ]) { url = "https://2018.flip-il.org/", label = text "FLIP 2018" }
-        , imageFromClass "mail" [ width <| px 28 ]
+        , link [] { url = "mailto:info@flip-il.org", label = imageFromClass "mail" [ width <| px 28, height <| px 28 ] }
         , imageFromClass "facebook" [ width <| px 28 ]
         , imageFromClass "twitter" [ width <| px 28 ]
         , imageFromClass "linkedin" [ width <| px 28 ]
@@ -105,7 +105,7 @@ topBar =
 
 
 title =
-    textColumn [ centerX, spacing 49, width fill ]
+    textColumn [ centerX, spacing 30, width fill ]
         [ paragraph (Typography.titleAnd [])
             [ text "FLIP 2020 CONFERENCE"
             ]
@@ -118,5 +118,4 @@ title =
 footer =
     row
         ([ width fill, alignBottom, centerX, spacing 12 ] ++ Typography.primary)
-        [ link [ alignRight ] { url = "mailto:info@flip-il.org", label = text "Email us" }
-        ]
+        []

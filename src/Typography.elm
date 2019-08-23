@@ -27,7 +27,7 @@ primaryAnd =
 title =
     [ Font.color Colors.primary
     , Font.size 84
-    , Font.bold
+    , Font.extraBold
     , Font.italic
     , Font.shadow
         { offset = ( 3, 3 ), blur = 0, color = Colors.titleShadow }

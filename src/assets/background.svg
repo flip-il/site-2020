@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1367" height="768" viewBox="0 0 1367 768">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(44,27,46,.59)}.cls-2,.cls-3{stroke:none}.cls-3{fill:#707070}
+        </style>
+    </defs>
+    <g id="Path_2639" class="cls-1" data-name="Path 2639">
+        <path d="M1366.5 767.5H.5V.5h1366v767z" class="cls-2"/>
+        <path d="M1 1v766h1365V1H1M0 0h1367v768H0V0z" class="cls-3"/>
+    </g>
+</svg>

@@ -1,4 +1,4 @@
-module Colors exposing (background, primary, shadow, titleShadow)
+module Colors exposing (background, darkText, lightGold, primary, shadow, titleShadow, transparentWhite)
 
 import Element exposing (Color, rgb255, rgba255)
 
@@ -12,9 +12,21 @@ primary =
     rgb255 252 233 255
 
 
+darkText =
+    rgb255 44 26 46
+
+
 titleShadow =
     rgba255 255 179 0 1.0
 
 
 shadow =
     rgba255 0 0 0 0.16
+
+
+transparentWhite =
+    rgba255 255 255 255 0.63
+
+
+lightGold =
+    rgb255 255 193 7

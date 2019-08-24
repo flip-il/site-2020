@@ -1,4 +1,4 @@
-module Typography exposing (callForActionAnd, primary, title, titleAnd)
+module Typography exposing (action, callForActionAnd, infoTitle, infoTitleAnd, primary, title, titleAnd)
 
 import Colors
 import Element exposing (Attribute)
@@ -53,3 +53,30 @@ callForAction =
 
 callForActionAnd =
     fontAnd callForAction
+
+
+infoTitle =
+    [ Font.family [ Font.typeface "Roboto" ]
+    , Font.color Colors.darkText
+    , Font.bold
+    , Font.italic
+    , Font.size 28
+    , Font.center
+    , Font.letterSpacing 0.84
+    , Font.shadow { offset = ( 2, 2 ), blur = 0, color = Colors.shadow }
+    ]
+
+
+infoTitleAnd =
+    fontAnd infoTitle
+
+
+action =
+    [ Font.family [ Font.typeface "Roboto" ]
+    , Font.color Colors.primary
+    , Font.bold
+    , Font.italic
+    , Font.size 26
+    , Font.center
+    , Font.shadow { offset = ( 0, 3 ), blur = 6, color = Colors.shadow }
+    ]

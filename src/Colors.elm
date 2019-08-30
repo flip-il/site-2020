@@ -1,4 +1,4 @@
-module Colors exposing (background, darkText, lightGold, primary, shadow, titleShadow, transparentWhite)
+module Colors exposing (background, darkText, errorRed, grey, lightGold, primary, shadow, titleShadow, transparentWhite)
 
 import Element exposing (Color, rgb255, rgba255)
 
@@ -30,3 +30,11 @@ transparentWhite =
 
 lightGold =
     rgb255 255 193 7
+
+
+errorRed =
+    rgb255 229 57 53
+
+
+grey =
+    rgb255 192 160 197

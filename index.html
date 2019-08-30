@@ -5,34 +5,74 @@
     <title>FLIP 2020</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style>
+        /*html {*/
+        /*    background: linear-gradient(*/
+        /*    rgba(255, 193, 7, 0.729) 3.1%,*/
+        /*    rgba(255, 189, 6, 0.733) 20%,*/
+        /*    rgba(255, 177, 5, 0.753) 26.1%,*/
+        /*    rgba(255, 156, 3, 0.784) 30.4%,*/
+        /*    rgba(255, 127, 1, 0.827) 33.9%,*/
+        /*    rgba(255, 111, 0, 0.851) 35.4%,*/
+        /*    rgba(241, 101, 24, 0.871) 40.1%,*/
+        /*    rgba(206, 75, 87, 0.925) 50.1%,*/
+        /*    #9c27b0 63.1%,*/
+        /*    #4a148c 95.7%*/
+        /*    );*/
+        /*}*/
         .backgroundImage {
-            background: url(/src/assets/background-light@2x.png) no-repeat center center fixed;
+            background: url(/src/assets/background.svg) no-repeat center center fixed;
             background-size: cover;
         }
+
+        .buildingsBackground {
+            background: url(/src/assets/buildings-background.svg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .buildingsAll {
+            background: url(/src/assets/buildings-all@2x.png) no-repeat center center fixed;
+            background-size: cover;
+            animation: fade-in 1s;
+        }
+        
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
         .logo {
             background: url(/src/assets/flip-logo.svg) no-repeat center center;
             background-size: contain;
             width: 127px;
             height: 69px;
         }
+
         .linkedin {
             background: url(/src/assets/LinkedIN.svg) no-repeat center center;
             background-size: contain;
             width: 28px;
             height: 28px;
         }
+
         .facebook {
             background: url(/src/assets/Facebook.svg) no-repeat center center;
             background-size: contain;
             width: 28px;
             height: 28px;
         }
+
         .mail {
             background: url(/src/assets/Mail.svg) no-repeat center center;
             background-size: contain;
             width: 28px;
             height: 28px;
         }
+
         .twitter {
             background: url(/src/assets/Twitter.svg) no-repeat center center;
             background-size: contain;
@@ -42,7 +82,7 @@
     </style>
 </head>
 <body>
-    <main></main>
-    <script src="index.js"></script>
+<main></main>
+<script src="index.js"></script>
 </body>
 </html>

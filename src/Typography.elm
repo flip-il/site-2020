@@ -1,4 +1,4 @@
-module Typography exposing (action, callForActionAnd, infoTitle, infoTitleAnd, primary, title, titleAnd)
+module Typography exposing (action, callForActionAnd, copyright, infoTitle, infoTitleAnd, primary, title, titleAnd)
 
 import Colors
 import Element exposing (Attribute)
@@ -79,4 +79,13 @@ action =
     , Font.size 26
     , Font.center
     , Font.shadow { offset = ( 0, 3 ), blur = 6, color = Colors.shadow }
+    ]
+
+
+copyright =
+    [ Font.family [ Font.typeface "Roboto" ]
+    , Font.color Colors.primary
+    , Font.bold
+    , Font.italic
+    , Font.size 15
     ]
